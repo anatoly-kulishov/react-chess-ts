@@ -1,0 +1,10 @@
+build
+static
+node_modules
+.eslintrc.js
+.gitignore
+.gitlab-ci.yml
+/src/react-app-env.d.ts
+/src/service-worker.ts
+/config-overrides.js
+/src/reportWebVitals.ts
