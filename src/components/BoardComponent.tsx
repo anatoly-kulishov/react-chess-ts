@@ -46,7 +46,9 @@ export const BoardComponent: FC<BoardProps> = ({ board, setBoard, currentPlayer,
 
   return (
     <div>
-      <h3>Текущий игрок {currentPlayer?.color}</h3>
+      <h3>
+        Current player <mark>{currentPlayer?.color}</mark>
+      </h3>
       <div className="board">
         {board.cells.map(row => (
           <React.Fragment key={v1()}>

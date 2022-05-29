@@ -36,11 +36,15 @@ export const App = () => {
 
   return (
     <div className="app">
-      <Timer restart={restart} currentPlayer={currentPlayer} />
-      <BoardComponent board={board} setBoard={setBoard} currentPlayer={currentPlayer} swapPlayer={swapPlayer} />
-      <div>
-        <LostFigures title="Черные фигуры" figures={board.lostBlackFigures} />
-        <LostFigures title="Белые фигуры" figures={board.lostWhiteFigures} />
+      <div className="custom-row">
+        <BoardComponent board={board} setBoard={setBoard} currentPlayer={currentPlayer} swapPlayer={swapPlayer} />
+        <div className="statistics">
+          <LostFigures title="Black" figures={board.lostBlackFigures} />
+          <LostFigures title="White" figures={board.lostWhiteFigures} />
+        </div>
+      </div>
+      <div className="timer">
+        <Timer restart={restart} currentPlayer={currentPlayer} />
       </div>
     </div>
   );

@@ -10,7 +10,7 @@ interface LostFiguresProps {
 
 export const LostFigures: FC<LostFiguresProps> = ({ title, figures }) => {
   return (
-    <div className="lost">
+    <div className="statistics__lost">
       <h3>{title}</h3>
       {figures.map(figure => (
         <div key={figure.id}>
