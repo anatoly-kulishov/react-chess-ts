@@ -49,7 +49,7 @@ export const Timer: FC<TimerProps> = ({ currentPlayer, restart }) => {
         <h2>Black - {blackTime}</h2>
         <h2>White - {whiteTime}</h2>
       </div>
-      <button className="reset-btn" onClick={handleRestart}>
+      <button className="reset-btn ant-btn ant-btn-primary" onClick={handleRestart}>
         Restart game
       </button>
     </div>
